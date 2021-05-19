@@ -1,0 +1,54 @@
+﻿@page "/"
+@using BlazorApp.Data
+@inject EmployeeService EmployeeService
+@inject DragAndDropService DragAndDropService
+
+<h3>Bubble Dragging</h3>
+
+@foreach (var task in employees)
+{
+    <DropTarget T="Employee" Drop="@OnDrop" zone="@task.Score">
+        <div class="drop-target">
+            <Draggable Data="@task" T="Employee" Drag="@OnDragStart">
+                <div class="draggable">
+                    <svg height="@(task.Score*2)" width="@(task.Score*2)">
+                        <circle cx="@task.Score" cy="@task.Score" r="@(task.Score*0.8)" stroke="black" stroke-width="@(task.Score *0.05)" fill="#a0a" />
+                        <text x="50%" y="50%" text-anchor="middle" alignment-baseline="central" fill="#fff" font-size="@(task.Score*0.2)px">@task.Title (@task.Score)</text>
+                    </svg>
+                </div>
+            </Draggable>
+        </div>
+    </DropTarget>
+}
+
+@if (dragScore == 2) {
+    <h1>@dropSuccess</h1>
+}
+
+@code {
+    private List<Employee> employees;
+
+    protected override void OnInitialized()
+    {
+        employees = EmployeeService.GetEmployeeData();
+    }
+
+    int dropScore = 0;
+    int dragScore = 0;
+    string dropSuccess = "Circle was dragged.";
+    string dropError = "Drop is not available";
+    void OnDrop(Employee data)
+    {
+        // Important: Invoke StateHasChanged() to update the page
+        dragScore = 2;
+        dropScore = 1;
+        StateHasChanged();
+    }
+
+    void OnDragStart(Employee data)
+    {
+        // Important: Invoke StateHasChanged() to update the page
+        dragScore = 1;
+        StateHasChanged();
+    }
+}

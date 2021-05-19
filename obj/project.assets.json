@@ -1,0 +1,941 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "jQWidgets.Blazor/1.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.2",
+          "Microsoft.AspNetCore.Components.Web": "3.1.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/jQWidgets.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/jQWidgets.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/jQWidgets.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/jQWidgets.Blazor.props": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authorization/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Metadata": "3.1.2",
+          "Microsoft.Extensions.Logging.Abstractions": "3.1.2",
+          "Microsoft.Extensions.Options": "3.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Authorization": "3.1.2",
+          "Microsoft.AspNetCore.Components.Analyzers": "3.1.2",
+          "Microsoft.JSInterop": "3.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Analyzers/3.1.2": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Forms/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Components.Web/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "3.1.2",
+          "Microsoft.AspNetCore.Components.Forms": "3.1.2",
+          "Microsoft.Extensions.DependencyInjection": "3.1.2",
+          "Microsoft.JSInterop": "3.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Metadata/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options/3.1.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.2",
+          "Microsoft.Extensions.Primitives": "3.1.2"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Primitives/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.JSInterop/3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.JSInterop.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "jQWidgets.Blazor/1.3.0": {
+      "sha512": "aEf5aW/Bd9cbbb0r5IF0lgBLI+FEtXx3idv+Oem9B+sS3jr00VtfpkUMPHcmikv3LaDhFqWjUSMpUUhCkI4qvA==",
+      "type": "package",
+      "path": "jqwidgets.blazor/1.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/jQWidgets.Blazor.props",
+        "buildMultiTargeting/jQWidgets.Blazor.props",
+        "buildTransitive/jQWidgets.Blazor.props",
+        "jqwidgets.blazor.1.3.0.nupkg.sha512",
+        "jqwidgets.blazor.nuspec",
+        "lib/netstandard2.0/jQWidgets.Blazor.dll",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.cs-CZ.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.de-DE.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.en-CA.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.en-US.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.fr-FR.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.he-IL.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.hr-HR.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.hu-HU.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.it-IT.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.ja-JP.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.lt.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.ru-RU.js",
+        "staticwebassets/jqwidgets/globalization/globalize.culture.sa-IN.js",
+        "staticwebassets/jqwidgets/globalization/globalize.js",
+        "staticwebassets/jqwidgets/jqx-all.js",
+        "staticwebassets/jqwidgets/jqxangular.js",
+        "staticwebassets/jqwidgets/jqxbargauge.js",
+        "staticwebassets/jqwidgets/jqxbulletchart.js",
+        "staticwebassets/jqwidgets/jqxbuttongroup.js",
+        "staticwebassets/jqwidgets/jqxbuttons.js",
+        "staticwebassets/jqwidgets/jqxcalendar.js",
+        "staticwebassets/jqwidgets/jqxchart.annotations.js",
+        "staticwebassets/jqwidgets/jqxchart.api.js",
+        "staticwebassets/jqwidgets/jqxchart.core.js",
+        "staticwebassets/jqwidgets/jqxchart.js",
+        "staticwebassets/jqwidgets/jqxchart.rangeselector.js",
+        "staticwebassets/jqwidgets/jqxchart.waterfall.js",
+        "staticwebassets/jqwidgets/jqxcheckbox.js",
+        "staticwebassets/jqwidgets/jqxcolorpicker.js",
+        "staticwebassets/jqwidgets/jqxcombobox.js",
+        "staticwebassets/jqwidgets/jqxcomplexinput.js",
+        "staticwebassets/jqwidgets/jqxcore.elements.js",
+        "staticwebassets/jqwidgets/jqxcore.js",
+        "staticwebassets/jqwidgets/jqxdata.export.js",
+        "staticwebassets/jqwidgets/jqxdata.js",
+        "staticwebassets/jqwidgets/jqxdatatable.js",
+        "staticwebassets/jqwidgets/jqxdate.js",
+        "staticwebassets/jqwidgets/jqxdatetimeinput.js",
+        "staticwebassets/jqwidgets/jqxdocking.js",
+        "staticwebassets/jqwidgets/jqxdockinglayout.js",
+        "staticwebassets/jqwidgets/jqxdockpanel.js",
+        "staticwebassets/jqwidgets/jqxdragdrop.js",
+        "staticwebassets/jqwidgets/jqxdraw.js",
+        "staticwebassets/jqwidgets/jqxdropdownbutton.js",
+        "staticwebassets/jqwidgets/jqxdropdownlist.js",
+        "staticwebassets/jqwidgets/jqxeditor.js",
+        "staticwebassets/jqwidgets/jqxexpander.js",
+        "staticwebassets/jqwidgets/jqxexport.js",
+        "staticwebassets/jqwidgets/jqxfileupload.js",
+        "staticwebassets/jqwidgets/jqxform.js",
+        "staticwebassets/jqwidgets/jqxformattedinput.js",
+        "staticwebassets/jqwidgets/jqxgauge.js",
+        "staticwebassets/jqwidgets/jqxgrid.aggregates.js",
+        "staticwebassets/jqwidgets/jqxgrid.chart.js",
+        "staticwebassets/jqwidgets/jqxgrid.columnsreorder.js",
+        "staticwebassets/jqwidgets/jqxgrid.columnsresize.js",
+        "staticwebassets/jqwidgets/jqxgrid.edit.js",
+        "staticwebassets/jqwidgets/jqxgrid.export.js",
+        "staticwebassets/jqwidgets/jqxgrid.filter.js",
+        "staticwebassets/jqwidgets/jqxgrid.grouping.js",
+        "staticwebassets/jqwidgets/jqxgrid.js",
+        "staticwebassets/jqwidgets/jqxgrid.pager.js",
+        "staticwebassets/jqwidgets/jqxgrid.selection.js",
+        "staticwebassets/jqwidgets/jqxgrid.sort.js",
+        "staticwebassets/jqwidgets/jqxgrid.storage.js",
+        "staticwebassets/jqwidgets/jqxheatmap.js",
+        "staticwebassets/jqwidgets/jqximport.js",
+        "staticwebassets/jqwidgets/jqxinput.js",
+        "staticwebassets/jqwidgets/jqxkanban.js",
+        "staticwebassets/jqwidgets/jqxknob.js",
+        "staticwebassets/jqwidgets/jqxknockout.js",
+        "staticwebassets/jqwidgets/jqxlayout.js",
+        "staticwebassets/jqwidgets/jqxlistbox.js",
+        "staticwebassets/jqwidgets/jqxlistmenu.js",
+        "staticwebassets/jqwidgets/jqxloader.js",
+        "staticwebassets/jqwidgets/jqxmaskedinput.js",
+        "staticwebassets/jqwidgets/jqxmaterialcolorpicker.js",
+        "staticwebassets/jqwidgets/jqxmenu.js",
+        "staticwebassets/jqwidgets/jqxnavbar.js",
+        "staticwebassets/jqwidgets/jqxnavigationbar.js",
+        "staticwebassets/jqwidgets/jqxnotification.js",
+        "staticwebassets/jqwidgets/jqxnumberinput.js",
+        "staticwebassets/jqwidgets/jqxpanel.js",
+        "staticwebassets/jqwidgets/jqxpasswordinput.js",
+        "staticwebassets/jqwidgets/jqxpivot.js",
+        "staticwebassets/jqwidgets/jqxpivotdesigner.js",
+        "staticwebassets/jqwidgets/jqxpivotgrid.js",
+        "staticwebassets/jqwidgets/jqxpopover.js",
+        "staticwebassets/jqwidgets/jqxprogressbar.js",
+        "staticwebassets/jqwidgets/jqxradiobutton.js",
+        "staticwebassets/jqwidgets/jqxrangeselector.js",
+        "staticwebassets/jqwidgets/jqxrating.js",
+        "staticwebassets/jqwidgets/jqxresponse.js",
+        "staticwebassets/jqwidgets/jqxresponsivepanel.js",
+        "staticwebassets/jqwidgets/jqxribbon.js",
+        "staticwebassets/jqwidgets/jqxscheduler.api.js",
+        "staticwebassets/jqwidgets/jqxscheduler.js",
+        "staticwebassets/jqwidgets/jqxscrollbar.js",
+        "staticwebassets/jqwidgets/jqxscrollview.js",
+        "staticwebassets/jqwidgets/jqxslider.js",
+        "staticwebassets/jqwidgets/jqxsortable.js",
+        "staticwebassets/jqwidgets/jqxsplitter.js",
+        "staticwebassets/jqwidgets/jqxswitchbutton.js",
+        "staticwebassets/jqwidgets/jqxtabs.js",
+        "staticwebassets/jqwidgets/jqxtagcloud.js",
+        "staticwebassets/jqwidgets/jqxtextarea.js",
+        "staticwebassets/jqwidgets/jqxtimepicker.js",
+        "staticwebassets/jqwidgets/jqxtoolbar.js",
+        "staticwebassets/jqwidgets/jqxtooltip.js",
+        "staticwebassets/jqwidgets/jqxtouch.js",
+        "staticwebassets/jqwidgets/jqxtree.js",
+        "staticwebassets/jqwidgets/jqxtreegrid.js",
+        "staticwebassets/jqwidgets/jqxtreemap.js",
+        "staticwebassets/jqwidgets/jqxvalidator.js",
+        "staticwebassets/jqwidgets/jqxwindow.js",
+        "staticwebassets/jqwidgets/styles/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/font/jqx-icons.eot",
+        "staticwebassets/jqwidgets/styles/font/jqx-icons.svg",
+        "staticwebassets/jqwidgets/styles/font/jqx-icons.ttf",
+        "staticwebassets/jqwidgets/styles/font/jqx-icons.woff",
+        "staticwebassets/jqwidgets/styles/font/jqx-icons.woff2",
+        "staticwebassets/jqwidgets/styles/images/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/backImage.png",
+        "staticwebassets/jqwidgets/styles/images/backgroundTop.png",
+        "staticwebassets/jqwidgets/styles/images/bg_black.png",
+        "staticwebassets/jqwidgets/styles/images/bg_black_horizontal.png",
+        "staticwebassets/jqwidgets/styles/images/bg_blackhover.png",
+        "staticwebassets/jqwidgets/styles/images/bg_blackhover_horizontal.png",
+        "staticwebassets/jqwidgets/styles/images/bg_blackpressed.png",
+        "staticwebassets/jqwidgets/styles/images/bg_blackpressed_horizontal.png",
+        "staticwebassets/jqwidgets/styles/images/bg_blueenergy.png",
+        "staticwebassets/jqwidgets/styles/images/bg_darkblue.png",
+        "staticwebassets/jqwidgets/styles/images/bg_darkbluehover.png",
+        "staticwebassets/jqwidgets/styles/images/bg_darkbluepressed.png",
+        "staticwebassets/jqwidgets/styles/images/black_gradient.png",
+        "staticwebassets/jqwidgets/styles/images/blackbackground.png",
+        "staticwebassets/jqwidgets/styles/images/check_black.png",
+        "staticwebassets/jqwidgets/styles/images/check_blue.png",
+        "staticwebassets/jqwidgets/styles/images/check_blue_indeterminate.png",
+        "staticwebassets/jqwidgets/styles/images/check_disabled.png",
+        "staticwebassets/jqwidgets/styles/images/check_indeterminate_black.png",
+        "staticwebassets/jqwidgets/styles/images/check_indeterminate_disabled.png",
+        "staticwebassets/jqwidgets/styles/images/check_indeterminate_white.png",
+        "staticwebassets/jqwidgets/styles/images/check_lightblue.png",
+        "staticwebassets/jqwidgets/styles/images/check_lightblue_indeterminate.png",
+        "staticwebassets/jqwidgets/styles/images/check_white.png",
+        "staticwebassets/jqwidgets/styles/images/close.png",
+        "staticwebassets/jqwidgets/styles/images/close_black.png",
+        "staticwebassets/jqwidgets/styles/images/close_blue.png",
+        "staticwebassets/jqwidgets/styles/images/close_white.png",
+        "staticwebassets/jqwidgets/styles/images/colorpicker/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/colorpicker/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/colorpicker/bar-hue.png",
+        "staticwebassets/jqwidgets/styles/images/colorpicker/bar-saturation.png",
+        "staticwebassets/jqwidgets/styles/images/colorpicker/map-hue.png",
+        "staticwebassets/jqwidgets/styles/images/colorpicker/map-saturation-overlay.png",
+        "staticwebassets/jqwidgets/styles/images/colorpicker/map-saturation.png",
+        "staticwebassets/jqwidgets/styles/images/common.png",
+        "staticwebassets/jqwidgets/styles/images/create-area-dark.png",
+        "staticwebassets/jqwidgets/styles/images/create-area.png",
+        "staticwebassets/jqwidgets/styles/images/create-bar-dark.png",
+        "staticwebassets/jqwidgets/styles/images/create-bar.png",
+        "staticwebassets/jqwidgets/styles/images/create-column-dark.png",
+        "staticwebassets/jqwidgets/styles/images/create-column.png",
+        "staticwebassets/jqwidgets/styles/images/create-line-dark.png",
+        "staticwebassets/jqwidgets/styles/images/create-line.png",
+        "staticwebassets/jqwidgets/styles/images/create-pie-dark.png",
+        "staticwebassets/jqwidgets/styles/images/create-pie.png",
+        "staticwebassets/jqwidgets/styles/images/create-scatter-dark.png",
+        "staticwebassets/jqwidgets/styles/images/create-scatter.png",
+        "staticwebassets/jqwidgets/styles/images/crosshair-white.png",
+        "staticwebassets/jqwidgets/styles/images/crosshair.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/darkness/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_flat_30_cccccc_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_flat_50_5c5c5c_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_glass_20_555555_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_glass_40_0078a3_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_glass_40_ffc73d_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_gloss-wave_25_333333_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_highlight-soft_80_eeeeee_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_inset-soft_25_000000_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-bg_inset-soft_30_f58400_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-icons_222222_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-icons_4b8e0b_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-icons_a83300_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-icons_cccccc_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/darkness/ui-icons_ffffff_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/darkred_gradient.png",
+        "staticwebassets/jqwidgets/styles/images/drag.png",
+        "staticwebassets/jqwidgets/styles/images/dragcancel.png",
+        "staticwebassets/jqwidgets/styles/images/error.png",
+        "staticwebassets/jqwidgets/styles/images/filter.png",
+        "staticwebassets/jqwidgets/styles/images/html_editor.png",
+        "staticwebassets/jqwidgets/styles/images/html_editor_white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-calendar-light.png",
+        "staticwebassets/jqwidgets/styles/images/icon-calendar-metro-light.png",
+        "staticwebassets/jqwidgets/styles/images/icon-calendar-metro-yellow-light.png",
+        "staticwebassets/jqwidgets/styles/images/icon-calendar-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-calendar.png",
+        "staticwebassets/jqwidgets/styles/images/icon-cancel-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-cancel.png",
+        "staticwebassets/jqwidgets/styles/images/icon-delete-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-delete.png",
+        "staticwebassets/jqwidgets/styles/images/icon-down-blue.png",
+        "staticwebassets/jqwidgets/styles/images/icon-down-transparent.png",
+        "staticwebassets/jqwidgets/styles/images/icon-down-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-down.png",
+        "staticwebassets/jqwidgets/styles/images/icon-edit-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-edit.png",
+        "staticwebassets/jqwidgets/styles/images/icon-first-blue.png",
+        "staticwebassets/jqwidgets/styles/images/icon-first-transparent.png",
+        "staticwebassets/jqwidgets/styles/images/icon-first-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-first.png",
+        "staticwebassets/jqwidgets/styles/images/icon-info-small.png",
+        "staticwebassets/jqwidgets/styles/images/icon-last-blue.png",
+        "staticwebassets/jqwidgets/styles/images/icon-last-transparent.png",
+        "staticwebassets/jqwidgets/styles/images/icon-last-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-last.png",
+        "staticwebassets/jqwidgets/styles/images/icon-left-blue.png",
+        "staticwebassets/jqwidgets/styles/images/icon-left-transparent.png",
+        "staticwebassets/jqwidgets/styles/images/icon-left-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-left.png",
+        "staticwebassets/jqwidgets/styles/images/icon-menu-minimized-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-menu-minimized.png",
+        "staticwebassets/jqwidgets/styles/images/icon-menu-small-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-menu-small.png",
+        "staticwebassets/jqwidgets/styles/images/icon-plus-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-plus.png",
+        "staticwebassets/jqwidgets/styles/images/icon-recurrence-exception-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-recurrence-exception.png",
+        "staticwebassets/jqwidgets/styles/images/icon-recurrence-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-recurrence.png",
+        "staticwebassets/jqwidgets/styles/images/icon-right-blue.png",
+        "staticwebassets/jqwidgets/styles/images/icon-right-transparent.png",
+        "staticwebassets/jqwidgets/styles/images/icon-right-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-right.png",
+        "staticwebassets/jqwidgets/styles/images/icon-save-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-save.png",
+        "staticwebassets/jqwidgets/styles/images/icon-showpassword-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-showpassword.png",
+        "staticwebassets/jqwidgets/styles/images/icon-sort-asc-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-sort-asc.png",
+        "staticwebassets/jqwidgets/styles/images/icon-sort-desc-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-sort-desc.png",
+        "staticwebassets/jqwidgets/styles/images/icon-sort-remove-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-sort-remove.png",
+        "staticwebassets/jqwidgets/styles/images/icon-time-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-time.png",
+        "staticwebassets/jqwidgets/styles/images/icon-up-blue.png",
+        "staticwebassets/jqwidgets/styles/images/icon-up-transparent.png",
+        "staticwebassets/jqwidgets/styles/images/icon-up-white.png",
+        "staticwebassets/jqwidgets/styles/images/icon-up.png",
+        "staticwebassets/jqwidgets/styles/images/icon_collapse.png",
+        "staticwebassets/jqwidgets/styles/images/icon_expand.png",
+        "staticwebassets/jqwidgets/styles/images/info.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/le-frog/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_diagonals-small_0_aaaaaa_40x40.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_diagonals-thick_15_444444_40x40.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_diagonals-thick_95_ffdc2e_40x40.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_glass_55_fbf5d0_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_highlight-hard_30_285c00_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_highlight-soft_33_3a8104_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_highlight-soft_50_4eb305_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_highlight-soft_60_4ca20b_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-bg_inset-soft_10_285c00_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-icons_4eb305_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-icons_72b42d_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-icons_cd0a0a_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/le-frog/ui-icons_ffffff_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/lightness/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/lightness/icon-first.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/icon-last.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_diagonals-thick_18_b81900_40x40.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_diagonals-thick_20_666666_40x40.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_flat_10_000000_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_glass_100_f6f6f6_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_glass_100_fdf5ce_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_glass_65_ffffff_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_gloss-wave_35_f6a828_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_highlight-soft_100_eeeeee_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-bg_highlight-soft_75_ffe45c_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-icons_222222_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-icons_228ef1_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-icons_ef8c08_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-icons_ffd27a_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/lightness/ui-icons_ffffff_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/loader-small.gif",
+        "staticwebassets/jqwidgets/styles/images/loader.gif",
+        "staticwebassets/jqwidgets/styles/images/mail.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-down-white.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-down.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-first-white.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-first.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-last-white.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-last.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-left-white.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-left.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-right-white.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-right.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-up-white.png",
+        "staticwebassets/jqwidgets/styles/images/material-icon-up.png",
+        "staticwebassets/jqwidgets/styles/images/material_check_black.png",
+        "staticwebassets/jqwidgets/styles/images/material_check_white.png",
+        "staticwebassets/jqwidgets/styles/images/menubutton.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-down-white.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-down.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-first-white.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-first.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-last-white.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-last.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-left-white.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-left.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-right - Copy.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-right-white.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-right.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-up-white.png",
+        "staticwebassets/jqwidgets/styles/images/metro-icon-up.png",
+        "staticwebassets/jqwidgets/styles/images/multi-arrow.gif",
+        "staticwebassets/jqwidgets/styles/images/office-icon-down.png",
+        "staticwebassets/jqwidgets/styles/images/office-icon-first.png",
+        "staticwebassets/jqwidgets/styles/images/office-icon-last.png",
+        "staticwebassets/jqwidgets/styles/images/office-icon-left.png",
+        "staticwebassets/jqwidgets/styles/images/office-icon-right.png",
+        "staticwebassets/jqwidgets/styles/images/office-icon-up.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/overcast/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_flat_0_aaaaaa_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_flat_0_eeeeee_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_flat_55_c0402a_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_flat_55_eeeeee_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_glass_100_f8f8f8_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_glass_35_dddddd_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_glass_60_eeeeee_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_inset-hard_75_999999_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-bg_inset-soft_50_c9c9c9_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-icons_3383bb_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-icons_454545_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-icons_70b2e1_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-icons_999999_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/overcast/ui-icons_fbc856_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/pin-black.png",
+        "staticwebassets/jqwidgets/styles/images/pin-blue.png",
+        "staticwebassets/jqwidgets/styles/images/pin-lightblue.png",
+        "staticwebassets/jqwidgets/styles/images/pin-white.png",
+        "staticwebassets/jqwidgets/styles/images/pin-yellow.png",
+        "staticwebassets/jqwidgets/styles/images/pin.png",
+        "staticwebassets/jqwidgets/styles/images/pinned-black.png",
+        "staticwebassets/jqwidgets/styles/images/pinned-blue.png",
+        "staticwebassets/jqwidgets/styles/images/pinned-lightblue.png",
+        "staticwebassets/jqwidgets/styles/images/pinned-white.png",
+        "staticwebassets/jqwidgets/styles/images/pinned-yellow.png",
+        "staticwebassets/jqwidgets/styles/images/pinned.png",
+        "staticwebassets/jqwidgets/styles/images/plus.png",
+        "staticwebassets/jqwidgets/styles/images/plus_white.png",
+        "staticwebassets/jqwidgets/styles/images/pointer.png",
+        "staticwebassets/jqwidgets/styles/images/rangebar_classic.png",
+        "staticwebassets/jqwidgets/styles/images/rangebar_darkblue.png",
+        "staticwebassets/jqwidgets/styles/images/rangebar_shinyblack.png",
+        "staticwebassets/jqwidgets/styles/images/rangebar_summer.png",
+        "staticwebassets/jqwidgets/styles/images/red_arrow_down.png",
+        "staticwebassets/jqwidgets/styles/images/red_arrow_up.png",
+        "staticwebassets/jqwidgets/styles/images/red_gradient.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/redmond/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/redmond/icon-first.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/icon-last.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_flat_0_aaaaaa_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_flat_55_fbec88_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_glass_75_d0e5f5_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_glass_85_dfeffc_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_glass_95_fef1ec_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_gloss-wave_55_5c9ccc_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_inset-hard_100_f5f8f9_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-bg_inset-hard_100_fcfdfd_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-icons_217bc0_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-icons_2e83ff_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-icons_469bdd_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-icons_6da8d5_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-icons_cd0a0a_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-icons_d8e7f3_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/redmond/ui-icons_f9bd01_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/roundbg_check_black.png",
+        "staticwebassets/jqwidgets/styles/images/roundbg_check_disabled.png",
+        "staticwebassets/jqwidgets/styles/images/roundbg_check_indeterminate.png",
+        "staticwebassets/jqwidgets/styles/images/roundbg_check_white.png",
+        "staticwebassets/jqwidgets/styles/images/roundbg_classic_hover.png",
+        "staticwebassets/jqwidgets/styles/images/roundbg_classic_normal.png",
+        "staticwebassets/jqwidgets/styles/images/roundbg_disabled.png",
+        "staticwebassets/jqwidgets/styles/images/search.png",
+        "staticwebassets/jqwidgets/styles/images/search_white.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/smoothness/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_flat_0_aaaaaa_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_flat_75_ffffff_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_glass_55_fbf9ee_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_glass_65_ffffff_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_glass_75_dadada_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_glass_75_e6e6e6_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_glass_95_fef1ec_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-bg_highlight-soft_75_cccccc_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-icons_222222_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-icons_2e83ff_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-icons_454545_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-icons_888888_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/smoothness/ui-icons_cd0a0a_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/sortasc.png",
+        "staticwebassets/jqwidgets/styles/images/sortascbutton.png",
+        "staticwebassets/jqwidgets/styles/images/sortdesc.png",
+        "staticwebassets/jqwidgets/styles/images/sortdescbutton.png",
+        "staticwebassets/jqwidgets/styles/images/sortremove.png",
+        "staticwebassets/jqwidgets/styles/images/star.png",
+        "staticwebassets/jqwidgets/styles/images/star_disabled.png",
+        "staticwebassets/jqwidgets/styles/images/star_hover.png",
+        "staticwebassets/jqwidgets/styles/images/start/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/start/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_flat_55_999999_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_flat_75_aaaaaa_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_glass_45_0078ae_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_glass_55_f8da4e_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_glass_75_79c9ec_1x400.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_gloss-wave_45_e14f1c_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_gloss-wave_50_6eac2c_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_gloss-wave_75_2191c0_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-bg_inset-hard_100_fcfdfd_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-icons_0078ae_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-icons_056b93_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-icons_d8e7f3_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-icons_e0fdff_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-icons_f5e175_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-icons_f7a50d_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/start/ui-icons_fcd113_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/stripes.png",
+        "staticwebassets/jqwidgets/styles/images/success.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ReadMe.txt",
+        "staticwebassets/jqwidgets/styles/images/sunny/Thumbs.db",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_diagonals-medium_20_d34d17_40x40.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_flat_30_cccccc_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_flat_50_5c5c5c_40x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_45_817865_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_60_fece2f_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_70_ffdd57_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_gloss-wave_90_fff9e5_500x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_highlight-soft_100_feeebd_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-bg_inset-soft_30_ffffff_1x100.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-icons_3d3d3d_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-icons_bd7b00_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-icons_d19405_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-icons_eb990f_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-icons_ed9f26_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-icons_fadc7a_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/sunny/ui-icons_ffe180_256x240.png",
+        "staticwebassets/jqwidgets/styles/images/tick.png",
+        "staticwebassets/jqwidgets/styles/images/time.png",
+        "staticwebassets/jqwidgets/styles/images/track_classic.png",
+        "staticwebassets/jqwidgets/styles/images/track_darkblue.png",
+        "staticwebassets/jqwidgets/styles/images/track_shinyblack.png",
+        "staticwebassets/jqwidgets/styles/images/track_summer.png",
+        "staticwebassets/jqwidgets/styles/images/warning.png",
+        "staticwebassets/jqwidgets/styles/images/wp_check_indeterminate_white.png",
+        "staticwebassets/jqwidgets/styles/images/wp_check_white.png",
+        "staticwebassets/jqwidgets/styles/jqx.android.css",
+        "staticwebassets/jqwidgets/styles/jqx.arctic.css",
+        "staticwebassets/jqwidgets/styles/jqx.base.css",
+        "staticwebassets/jqwidgets/styles/jqx.black.css",
+        "staticwebassets/jqwidgets/styles/jqx.blackberry.css",
+        "staticwebassets/jqwidgets/styles/jqx.blue.css",
+        "staticwebassets/jqwidgets/styles/jqx.bootstrap.css",
+        "staticwebassets/jqwidgets/styles/jqx.classic.css",
+        "staticwebassets/jqwidgets/styles/jqx.dark-ie.css",
+        "staticwebassets/jqwidgets/styles/jqx.dark.css",
+        "staticwebassets/jqwidgets/styles/jqx.darkblue.css",
+        "staticwebassets/jqwidgets/styles/jqx.energyblue.css",
+        "staticwebassets/jqwidgets/styles/jqx.flat.css",
+        "staticwebassets/jqwidgets/styles/jqx.fresh.css",
+        "staticwebassets/jqwidgets/styles/jqx.glacier.css",
+        "staticwebassets/jqwidgets/styles/jqx.highcontrast.css",
+        "staticwebassets/jqwidgets/styles/jqx.light-ie.css",
+        "staticwebassets/jqwidgets/styles/jqx.light.css",
+        "staticwebassets/jqwidgets/styles/jqx.material-green.css",
+        "staticwebassets/jqwidgets/styles/jqx.material-purple.css",
+        "staticwebassets/jqwidgets/styles/jqx.material.css",
+        "staticwebassets/jqwidgets/styles/jqx.metro.css",
+        "staticwebassets/jqwidgets/styles/jqx.metrodark.css",
+        "staticwebassets/jqwidgets/styles/jqx.mobile.css",
+        "staticwebassets/jqwidgets/styles/jqx.office.css",
+        "staticwebassets/jqwidgets/styles/jqx.orange.css",
+        "staticwebassets/jqwidgets/styles/jqx.shinyblack.css",
+        "staticwebassets/jqwidgets/styles/jqx.summer.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-darkness.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-le-frog.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-lightness.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-overcast.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-redmond.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-smoothness.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-start.css",
+        "staticwebassets/jqwidgets/styles/jqx.ui-sunny.css",
+        "staticwebassets/jqwidgets/styles/jqx.web.css",
+        "staticwebassets/jqwidgets/styles/jqx.windowsphone.css",
+        "staticwebassets/jqwidgets/styles/theme.css",
+        "staticwebassets/jqxBlazor.js"
+      ]
+    },
+    "Microsoft.AspNetCore.Authorization/3.1.2": {
+      "sha512": "bbu9qMsOdmNjLLaRawhT3OfjFHleK9D2ICGfmjvkMVNyfx42P5NgypOlqKgK6SDoqtex3DisWd4E3nePtohPCw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.authorization/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Authorization.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Authorization.xml",
+        "microsoft.aspnetcore.authorization.3.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.authorization.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components/3.1.2": {
+      "sha512": "lLY10dGm/egqidXfAqBBbe2ANQGekv+ospuTGkDbmHoBC5MVRYk5iQIqOUVCSnxY9s2kFh3YsTZ6ElU9Cv9i3w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.xml",
+        "microsoft.aspnetcore.components.3.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.components.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Analyzers/3.1.2": {
+      "sha512": "inGAaJU8Qxxvw/BuimJ/L2P8yxlsI3EwMPBuwNCL5PZ5GOwEjNCTEGRRicqMM7W8NgwCrbsI7489o5Xkr/Cx/w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.analyzers/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/Microsoft.AspNetCore.Components.Analyzers.dll",
+        "build/netstandard2.0/Microsoft.AspNetCore.Components.Analyzers.props",
+        "microsoft.aspnetcore.components.analyzers.3.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.components.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Forms/3.1.2": {
+      "sha512": "fTL2kS8vNJadi6UVRlOeZqIhrulWKWr3Uy2zVoo2vMAkyOs2AoGq9mTUZHU2S6okpHiD9ovexil2n1bERFm2/w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.forms/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Forms.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Forms.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Forms.xml",
+        "microsoft.aspnetcore.components.forms.3.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.components.forms.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Components.Web/3.1.2": {
+      "sha512": "tkPkm2WlqhWh54KsWfJzdsIiSIlTpvVE2hSlwbeUDNq5bMwVc1WdBakNGblYpQKdrliBlxIg0QOZg4YqAJyBKw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.components.web/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Components.Web.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Web.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Components.Web.xml",
+        "microsoft.aspnetcore.components.web.3.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.components.web.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Metadata/3.1.2": {
+      "sha512": "4ML2fUxRyfrpXnAppHi8c7MDiTOr9yJ5/Sp6p8XktVw8H5CJJSs6KesM/mc9vREpg6FgC8EvgDRNKom6PLPcjQ==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.metadata/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.xml",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Metadata.xml",
+        "microsoft.aspnetcore.metadata.3.1.2.nupkg.sha512",
+        "microsoft.aspnetcore.metadata.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection/3.1.2": {
+      "sha512": "e+F6/wjQPOFHB/sGWTAqC8FX/C6+JZWWLpryXTAQYIS3tr+17lByADdP9Y6RtxfJ4kW/IPrU6RuxTNZNdAQz1A==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.3.1.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.2": {
+      "sha512": "/CZzCSCIm/3FFoXHfUpsfov/Elo268dcvlz/MMINT0vPgphqg2pAgdEn/EjCDyoAT3NAmsRmjfGwBumC1uYJtA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/3.1.2": {
+      "sha512": "cIXPw7VVX3fON4uuHwJFmCi0qDl8uY75xZMKB2oM3In0ZDEB1Ee+p9Ti1DSw92AwRtJ2Zh+QG1joTBednJMzvA==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.3.1.2.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Options/3.1.2": {
+      "sha512": "6F4anwt9yMlnQckac2etjrasRFyqZNIp46p+i9qVps0DXNsOLZIKRkqq4AY4FlxXxKeGkEJC7M77RQEkvd3p8Q==",
+      "type": "package",
+      "path": "microsoft.extensions.options/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Options.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
+        "microsoft.extensions.options.3.1.2.nupkg.sha512",
+        "microsoft.extensions.options.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Primitives/3.1.2": {
+      "sha512": "WGtoFWY9yc9HGMG6ObDNQPz9dBP+xz/GqFe2dKjdE/cSdXFEKxCFTyYCzL/e8kxVkc/Bq9qjOsXRWydvn0g9Uw==",
+      "type": "package",
+      "path": "microsoft.extensions.primitives/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
+        "microsoft.extensions.primitives.3.1.2.nupkg.sha512",
+        "microsoft.extensions.primitives.nuspec"
+      ]
+    },
+    "Microsoft.JSInterop/3.1.2": {
+      "sha512": "36NPmMYZ8L97/iJTd3ezY3Hrxh7XDbSOElQnZQ6eJpXD7bm1idX4NyUKKTGnmf3WPDzXwEDXvpOL2stiFxkcpA==",
+      "type": "package",
+      "path": "microsoft.jsinterop/3.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.JSInterop.dll",
+        "lib/netcoreapp3.1/Microsoft.JSInterop.xml",
+        "lib/netstandard2.0/Microsoft.JSInterop.dll",
+        "lib/netstandard2.0/Microsoft.JSInterop.xml",
+        "microsoft.jsinterop.3.1.2.nupkg.sha512",
+        "microsoft.jsinterop.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "jQWidgets.Blazor >= 1.3.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Satan\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "F:\\Blood\\second\\Project\\BlazorApp\\BlazorApp.csproj",
+      "projectName": "BlazorApp",
+      "projectPath": "F:\\Blood\\second\\Project\\BlazorApp\\BlazorApp.csproj",
+      "packagesPath": "C:\\Users\\Satan\\.nuget\\packages\\",
+      "outputPath": "F:\\Blood\\second\\Project\\BlazorApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Satan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "dependencies": {
+          "jQWidgets.Blazor": {
+            "target": "Package",
+            "version": "[1.3.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
